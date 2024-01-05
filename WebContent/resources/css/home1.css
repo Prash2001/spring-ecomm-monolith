@@ -1,0 +1,142 @@
+@import 'nav1.css';
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url(../img/WinterWear.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+	align-items: center;
+	justify-content: center;
+    height: 150px;
+    display: block;
+    margin-right: -70px;
+}
+.sub-heading{
+	margin-top: 200px;
+    margin-right: 30px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.product-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.product-container{
+    padding: 0 1vw;
+    display: flex;
+    flex-flow:wrap;
+
+    scroll-behavior: smooth;
+    justify-content:center;
+}
+.product-container::-webkit-scrollbar{
+    display: none;
+}
+.product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-bottom: 50px;
+}
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.product-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left:  50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+.card-btn:hover{
+    background: #efefef;  
+}
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+.product-brand{
+    text-transform: uppercase;
+}
+.product-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+.actual-price{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.add-to-cart-btn{
+	 display: block;
+            width: 150px; /* Set the fixed length for the button */
+            margin: 10px auto; /* Center the button horizontally within its container */
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+}
+.wishlist{
+	cursor: pointer;
+}
